@@ -1,1 +1,1 @@
-#scrimba-password-gen
+# scrimba-password-gen
