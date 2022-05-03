@@ -1,4 +1,113 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #1C1C1C;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    margin: 25px 0 0 0;
+}
+
+h2 {
+    color: #CCC;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.svg {
+    height: 15px;
+    width: 15px;
+    padding-right: 5px;
+}
+
+.card {
+    background-color: #1F2937;
+    border-radius: 5px;
+    width: 550px;
+    height: 550px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.card-content {
+    padding-top: 75px;
+}
+
+.password-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+    padding-top: 35px;
+    border-top: solid 1px #2F3E53;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.green-button {
+    background-color: #10B981;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button-length-group {
+    display: flex;
+    margin: 50px 0 35px 0;
+}
+
+.pass-len {
+    margin-left: 30px;
+    margin-right: 0;
+    color: #55F991;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    /* background-color: #273549; */
+    padding: 10px ;
+    border-radius: 3px;
+}
+
+#length-input-el {
+    background-color: #273549;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    color: #55F991;
+    padding: 11px 0 11px 5px;
+    margin-top: 1px;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+.output {
+    height: 40px;
+    width: 200px;
+    background-color: #273549;
+    text-align: center;
+    color: #55F991;
+    border-radius: 2.5px;
+    /* margin: 10px; */
+    border: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.green-text {
+    color: #4ADF86;
 }

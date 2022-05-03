@@ -2,12 +2,14 @@ let passOneElem = document.getElementById("pass-one-el")
 let passTwoElem = document.getElementById("pass-two-el")
 let passThreeElem = document.getElementById("pass-three-el")
 let passFourElem = document.getElementById("pass-four-el")
+let lengthInputEl = document.getElementById("length-input-el")
 
 let lowercase = "abcdefghijklmnopqrstuvwxyz" 
 let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let digits = "0123456789"
+let specialChars = "!@#$%^&*"
 
-let alphabet = lowercase + uppercase + digits
+let alphabet = lowercase + uppercase + digits + specialChars
 let passwordLength = 10
 
 function myRandomNum() {
@@ -20,16 +22,17 @@ function genPass() {
     let passwordTwo = ""
     let passwordThree = ""
     let passwordFour = ""
-    
+    let passwordLength = lengthInputEl.value
+
     for (let i = 0; i < passwordLength; i++) {
         passwordOne += alphabet[myRandomNum()] 
         passwordTwo += alphabet[myRandomNum()]
         passwordThree += alphabet[myRandomNum()]
         passwordFour += alphabet[myRandomNum()]
 
-        passOneElem.textContent = passwordOne
-        passTwoElem.textContent = passwordTwo
-        passThreeElem.textContent = passwordThree
-        passFourElem.textContent = passwordFour
+        passOneElem.value = passwordOne
+        passTwoElem.value = passwordTwo
+        passThreeElem.value = passwordThree
+        passFourElem.value = passwordFour
     }
 }

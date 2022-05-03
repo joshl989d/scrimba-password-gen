@@ -1,15 +1,38 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- <p>Generate a</p>
-        <p>random password</p> -->
-        <button type="button" onclick="genPass()">Generate passwords</button>
-        <p id="pass-one-el"></p>
-        <p id="pass-two-el"></p>
-        <p id="pass-three-el"></p>
-        <p id="pass-four-el"></p>
-        <script src="index.js"></script>
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-content">
+                    <h1>Generate a <br><span class="green-text">random password</span></br></h1>
+                    <h2>Never use an insecure password again.</h2>
+                    
+                <div class="button-length-group">   
+                    <button class="green-button" type="button" onclick="genPass()"><img class="svg" src="Vector.svg"> Generate passwords</button>
+                    
+                    <div>
+                        <span class="pass-len">Password Length</span>
+                        <input type="number" id="length-input-el">
+                    </div>    
+                </div>     
+                    
+                        <div class="password-container">
+                            <input readonly="true" class="output" id="pass-one-el"></input>
+                            <input readonly="true" class="output" id="pass-two-el"></input>
+                            <input readonly="true" class="output" id="pass-three-el"></input>
+                            <input readonly="true" class="output" id="pass-four-el"></input>
+                        </div>
+                </div>
+            </div>
+        </div>
+            <script src="index.js"></script>
     </body>
 </html>
