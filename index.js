@@ -17,6 +17,11 @@ function myRandomNum() {
     return randomNum
 }
 
+function copy(e) {
+    navigator.clipboard.writeText(e.value)
+    alert("Password copied to clipboard")
+}
+
 function genPass() {
     let passwordOne = ""
     let passwordTwo = ""
@@ -25,14 +30,14 @@ function genPass() {
     let passwordLength = lengthInputEl.value
 
     for (let i = 0; i < passwordLength; i++) {
-        passwordOne += alphabet[myRandomNum()] 
+        passwordOne += alphabet[myRandomNum()]
         passwordTwo += alphabet[myRandomNum()]
         passwordThree += alphabet[myRandomNum()]
         passwordFour += alphabet[myRandomNum()]
 
-        passOneElem.value = passwordOne
-        passTwoElem.value = passwordTwo
-        passThreeElem.value = passwordThree
-        passFourElem.value = passwordFour
+        passOneElem.value = passwordOne + "        copy"
+        passTwoElem.value = passwordTwo + "        copy"
+        passThreeElem.value = passwordThree + "        copy"
+        passFourElem.value = passwordFour + "        copy"
     }
 }
